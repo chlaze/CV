@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chloé Mendes — CV (Swiss Minimal)</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+@page { size: A4; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 210mm; }
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 8.5pt;
+  line-height: 1.4;
+  color: #000;
+  background: #fff;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+.page {
+  width: 210mm;
+  height: 297mm;
+  padding: 12mm 14mm;
+  overflow: hidden;
+}
+
+/* HEADER */
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  padding-bottom: 4mm;
+  border-bottom: 3px solid #000;
+  margin-bottom: 4mm;
+}
+.header h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 42pt;
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  color: #000;
+  text-transform: uppercase;
+}
+.header .tagline {
+  text-align: right;
+  font-size: 8pt;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  line-height: 1.5;
+}
+.header .tagline .accent {
+  display: block;
+  color: #E30613;
+  font-size: 9pt;
+  margin-bottom: 1mm;
+}
+
+/* TOP META */
+.meta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4mm;
+  margin-bottom: 4mm;
+  padding-bottom: 3.5mm;
+  border-bottom: 1px solid #000;
+}
+.meta-item .label {
+  display: block;
+  font-size: 6.5pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #E30613;
+  margin-bottom: 1mm;
+}
+.meta-item .value {
+  font-size: 8pt;
+  font-weight: 500;
+  color: #000;
+  line-height: 1.4;
+}
+
+/* BODY GRID */
+.body-grid {
+  display: grid;
+  grid-template-columns: 1fr 62mm;
+  gap: 10mm;
+}
+
+/* LEFT - MAIN */
+.intro {
+  font-size: 9pt;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  margin-bottom: 4mm;
+  padding-left: 4mm;
+  border-left: 3px solid #E30613;
+}
+.intro strong { font-weight: 700; }
+
+h2.section-head {
+  font-size: 10pt;
+  font-weight: 900;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-top: 3mm;
+  margin-bottom: 2.2mm;
+  padding-bottom: 1.2mm;
+  border-bottom: 2px solid #000;
+}
+h2.section-head em {
+  font-style: normal;
+  color: #E30613;
+  font-weight: 900;
+}
+
+.xp-item { margin-bottom: 2.4mm; page-break-inside: avoid; }
+.xp-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 3mm;
+  margin-bottom: 0.3mm;
+}
+.xp-title {
+  font-size: 9.5pt;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.25;
+}
+.xp-date {
+  font-size: 7.5pt;
+  font-weight: 800;
+  color: #000;
+  white-space: nowrap;
+  letter-spacing: 0.03em;
+}
+.xp-company {
+  font-size: 7.8pt;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 1mm;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.xp-bullets { list-style: none; padding-left: 0; }
+.xp-bullets li {
+  position: relative;
+  padding-left: 3mm;
+  font-size: 8pt;
+  color: #000;
+  margin-bottom: 0.4mm;
+  line-height: 1.4;
+}
+.xp-bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 1.8mm;
+  width: 2mm;
+  height: 0.5mm;
+  background: #E30613;
+}
+.xp-bullets li strong { font-weight: 700; }
+
+/* RIGHT - SIDEBAR */
+.side-section { margin-bottom: 3.5mm; }
+.side-section h3 {
+  font-size: 8.5pt;
+  font-weight: 900;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 2mm;
+  padding-bottom: 1mm;
+  border-bottom: 1.5px solid #000;
+}
+.side-section h3::after {
+  content: '';
+  display: inline-block;
+  width: 3mm;
+  height: 1mm;
+  background: #E30613;
+  margin-left: 1.5mm;
+  vertical-align: middle;
+}
+.side-section p { font-size: 7.5pt; color: #000; line-height: 1.5; }
+.lang-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 7.8pt;
+  margin-bottom: 1mm;
+  padding-bottom: 0.8mm;
+  border-bottom: 1px dashed #ccc;
+}
+.lang-row strong { font-weight: 700; }
+.lang-row span { color: #555; font-size: 7.3pt; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="header">
+    <h1>Chloé<br>Mendes</h1>
+    <div class="tagline">
+      <span class="accent">Product Project Manager</span>
+      Fintech &amp; Digital Banking<br>
+      Available — Switzerland · Remote or on-site
+    </div>
+  </header>
+
+  <div class="meta">
+    <div class="meta-item"><span class="label">Email</span><span class="value">mendeschloe<br>@outlook.com</span></div>
+    <div class="meta-item"><span class="label">Phone</span><span class="value">🇨🇭 +41 78 318 28 10<br>🇫🇷 +33 7 82 12 72 80</span></div>
+    <div class="meta-item"><span class="label">Location</span><span class="value">Ferney-Voltaire<br>Remote or on-site</span></div>
+    <div class="meta-item"><span class="label">LinkedIn</span><span class="value">linkedin.com/in<br>/mendeschloe</span></div>
+  </div>
+
+  <div class="body-grid">
+    <div>
+      <p class="intro">
+        Proactive project professional with hands-on experience launching and scaling financial products,
+        implementing <strong>CRMs</strong>, and driving <strong>cross-functional execution</strong>
+        across product, engineering and business teams.
+      </p>
+
+      <h2 class="section-head">Professional <em>Experience</em></h2>
+
+      <div class="xp-item">
+        <div class="xp-head"><span class="xp-title">Project Lead — Retirement Planning Division</span><span class="xp-date">09/2025 — Present</span></div>
+        <p class="xp-company">FINKE Swiss · Calaotrade — Switzerland</p>
+        <ul class="xp-bullets">
+          <li>Drive end-to-end rollout of a new financial product line (<strong>3rd pillar, vested benefits, retirement planning</strong>)</li>
+          <li>Own the <strong>CRM implementation</strong>: requirements, vendor selection, specifications, adoption</li>
+          <li>Write cahiers des charges (technical &amp; functional specs) and internal playbooks</li>
+          <li>Identify workflow bottlenecks and design scalable process improvements</li>
+          <li>Coordinate alignment between sales, operations and leadership</li>
+          <li>Currently preparing <strong>AFA</strong> certification</li>
+        </ul>
+      </div>
+
+      <div class="xp-item">
+        <div class="xp-head"><span class="xp-title">Head of Tax &amp; Product Development</span><span class="xp-date">12/2021 — 02/2025</span></div>
+        <p class="xp-company">Planifique — Geneva, Switzerland</p>
+        <ul class="xp-bullets">
+          <li>Launched a <strong>new financial product from zero to market</strong>: scoping, design, pricing, go-to-market</li>
+          <li>Built the full delivery lifecycle: audits, retirement, mortgage, marriage/PACS tax optimisation</li>
+          <li>Managed KPIs across commercial pipeline and service production</li>
+          <li>Produced executive-level reports and insights for strategic decision-making</li>
+          <li>Drove cantonal tax analysis to optimise client outcomes</li>
+        </ul>
+      </div>
+
+      <div class="xp-item">
+        <div class="xp-head"><span class="xp-title">Web Developer — Agile Delivery</span><span class="xp-date">12/2020 — 09/2021</span></div>
+        <p class="xp-company">Sopra Steria — CNAM · Lyon</p>
+        <ul class="xp-bullets">
+          <li>Delivered Java web applications in Agile squads for a major French client</li>
+          <li>Cross-functional collaboration with business analysts, QA and operations</li>
+        </ul>
+      </div>
+
+      <div class="xp-item">
+        <div class="xp-head"><span class="xp-title">Mobile Application Developer</span><span class="xp-date">09/2019 — 11/2020</span></div>
+        <p class="xp-company">Sopra Steria — bioMérieux · Lyon</p>
+        <ul class="xp-bullets">
+          <li>Built mobile apps in Angular, Java, SAPUI5 &amp; Fiori Elements</li>
+          <li>Produced structured technical documentation (Markdown / MKDOC)</li>
+        </ul>
+      </div>
+
+      <div class="xp-item">
+        <div class="xp-head"><span class="xp-title">SAP Technical Consultant</span><span class="xp-date">09/2018 — 09/2019</span></div>
+        <p class="xp-company">TVH Consulting — Lyon</p>
+        <ul class="xp-bullets">
+          <li>Managed incident triage &amp; resolution across multiple enterprise clients</li>
+          <li>ABAP development, bug fixing, and technical documentation</li>
+        </ul>
+      </div>
+
+      <div class="xp-item">
+        <div class="xp-head"><span class="xp-title">Early Engineering Roles</span><span class="xp-date">2017 — 2018</span></div>
+        <p class="xp-company">Calaosoft &amp; W3plus — France</p>
+        <ul class="xp-bullets">
+          <li>Full-stack web development · Mobile testing &amp; QA · Feature validation</li>
+        </ul>
+      </div>
+
+      <h2 class="section-head">Education &amp; <em>Certifications</em></h2>
+      <div class="xp-item">
+        <div class="xp-head"><span class="xp-title">AFA Certification</span><span class="xp-date">In progress</span></div>
+        <p class="xp-company">Professional certification · Switzerland</p>
+      </div>
+      <div class="xp-item">
+        <div class="xp-head"><span class="xp-title">Engineering Degree — Computer Science (Mobile)</span><span class="xp-date">2016 — 2021</span></div>
+        <p class="xp-company">Science U — Lyon, France · 5-year work-study curriculum</p>
+      </div>
+    </div>
+
+    <aside>
+      <div class="side-section">
+        <h3>Project &amp; Product</h3>
+        <p>Roadmapping · Specs &amp; cahiers des charges · Stakeholder coordination · Agile &amp; Lean · Governance &amp; playbooks · Risk &amp; blocker management</p>
+      </div>
+      <div class="side-section">
+        <h3>Tools</h3>
+        <p>Jira · Asana · Notion · Salesforce · Confluence · Markdown · Dashboards &amp; KPIs · Google Workspace · MS 365 · Miro / Figma</p>
+      </div>
+      <div class="side-section">
+        <h3>Fintech Domain</h3>
+        <p>Swiss &amp; cross-border taxation · 3rd pillar · Vested benefits · Retirement planning · Mortgage · Matrimonial · Compliance · Interest in digital banking &amp; crypto</p>
+      </div>
+      <div class="side-section">
+        <h3>Engineering</h3>
+        <p>Angular · JavaScript · HTML/CSS · Java · SAPUI5 · Fiori · ABAP · Technical documentation · SDLC</p>
+      </div>
+      <div class="side-section">
+        <h3>Languages</h3>
+        <div class="lang-row"><strong>French</strong><span>Native</span></div>
+        <div class="lang-row"><strong>English</strong><span>B2</span></div>
+        <div class="lang-row"><strong>German</strong><span>A1</span></div>
+      </div>
+      <div class="side-section">
+        <h3>Soft Skills</h3>
+        <p>Passionate &amp; creative · Adaptable · Team player · Client-oriented · Strategic &amp; structured · Autonomous</p>
+      </div>
+    </aside>
+  </div>
+</div>
+</body>
+</html>

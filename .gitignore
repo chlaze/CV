@@ -1,0 +1,17 @@
+# Intermediate PDF versions (keep only the clean ones)
+Chloe_Mendes_CV.pdf
+Chloe_Mendes_CV_v2.pdf
+CV_v2_Swiss.pdf
+CV_v2_Swiss_rev2.pdf
+CV_v2_Swiss_rev3.pdf
+CV_v2_Swiss_rev4.pdf
+
+# Claude local config
+.claude/
+
+# OS / editor
+Thumbs.db
+.DS_Store
+*.swp
+.vscode/
+.idea/
