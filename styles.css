@@ -775,14 +775,50 @@ body::after {
     text-align: center;
 }
 
+.testimonials-subtitle {
+    font-family: var(--font-serif);
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    color: var(--color-muted);
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.testimonials-subtitle strong {
+    font-style: normal;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
 .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-    margin-top: 4rem;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.testimonial-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    padding: 0.3rem 0.6rem;
+    background: rgba(200, 16, 46, 0.08);
+    color: var(--color-accent);
+    border-radius: 100px;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.testimonial-featured .testimonial-badge {
+    background: rgba(201, 169, 97, 0.2);
+    color: var(--color-gold);
 }
 
 .testimonial {
