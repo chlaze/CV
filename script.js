@@ -109,7 +109,18 @@ document.querySelectorAll('.stat-number').forEach(el => {
 });
 
 /* REVEAL ON SCROLL */
-const revealElements = document.querySelectorAll('.section-header, .about-text, .about-card, .timeline-item, .skill-card, .lang-item, .contact-action, .contact-pill, .contact-lead, .testimonial, .google-badge');
+const revealElements = document.querySelectorAll('.section-header, .about-text, .about-card, .timeline-item, .skill-card, .lang-item, .contact-action, .contact-pill, .contact-lead, .testimonial, .google-badge, .project-card, .skill-group-new');
+
+/* ANIMATE SKILL BARS ON SCROLL */
+const skillObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animated');
+            skillObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.3 });
+document.querySelectorAll('.skill-level').forEach(el => skillObserver.observe(el));
 revealElements.forEach(el => el.classList.add('reveal'));
 
 const revealObserver = new IntersectionObserver((entries) => {
