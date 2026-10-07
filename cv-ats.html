@@ -115,56 +115,78 @@ ul li {
 <span>LinkedIn: linkedin.com/in/mendeschloe</span>
 <span>GitHub: github.com/chlaze</span>
 <span>Portfolio: chlaze.github.io/CV</span>
-<span>Location: Basel area — Open to remote, Basel, Zurich, Geneva</span>
+<span>Location: Basel area — open to remote and Switzerland-based travel</span>
 </p>
 
 <h2>Summary</h2>
 <p class="summary">
-Software engineer who builds and sells. Seven years across software delivery, financial advisory
-and product. I design decision engines in regulated domains (Swiss payroll, health, retirement
-planning), ship them end to end on my own, and turn them into revenue: CHF 4M in client assets
-raised at FINKE Swiss, over CHF 300K of audit sales at Planifique. Fluent in English and French,
-working proficiency in German.
+Software engineer and product builder with seven years across software delivery, financial advisory and product.
+I build and deploy end-to-end products in regulated domains. Sanoria is live on the App Store, with version 1.5
+under review; SoloStall is an e-commerce platform deployed for its first customer. Hands-on with TypeScript,
+Python, APIs, cloud services and Anthropic-powered LLM integration. Earlier commercial results include CHF 4M
+in client assets raised at FINKE Swiss and over CHF 300K in audit and retirement-plan sales at Planifique.
+Fluent in French and English; working proficiency in German.
 </p>
 
 <h2>Selected Projects</h2>
 
 <div class="job">
 <div class="job-header">
-<span class="job-title">Saneo — Personalized health app (iOS)</span><br>
-<span class="job-company">Personal project</span> — <span class="job-dates">07/2026 – Present</span> — <span class="job-location">Solo · Submitted to the App Store, in review</span>
+<span class="job-title">Sanoria — Personalized health and wellbeing app (iOS)</span><br>
+<span class="job-company">Personal project</span> — <span class="job-dates">07/2026 – Present</span> — <span class="job-location">Solo · v1.0 live on App Store; v1.5 under review</span>
 </div>
 <ul>
-<li>Food-scanning app computing a health score adapted to each user's conditions, blood test results and daily intake, instead of a one-size-fits-all rating; LLM features powered by the Anthropic API behind an authenticated edge function.</li>
-<li>Took the app through five App Store rejections (health claims guideline 1.4.1, reviewer access, HealthKit, iPad crash), each diagnosed and fixed; added 22 cited scientific sources, a guest mode and a build preflight check.</li>
-<li>Traceable scoring engine: nutrition, NOVA, additives and contaminants sub-scores modulated by about twenty condition rules, exposing each applied modifier.</li>
+<li>Built and published an iOS app that scores food against the user's health profile and daily intake; 21 selectable profiles, food journal, recipes, sport and wellbeing tracking.</li>
+<li>Integrated Anthropic-powered LLM coach features behind an authenticated edge function; designed access controls and privacy measures for sensitive health data.</li>
+<li>Resolved repeated App Store review issues through v1.0 acceptance, including health-claim sourcing, reviewer access, HealthKit and iPad launch behavior; v1.5 is currently under review.</li>
 </ul>
-<p class="job-stack">Stack: React 19, Vite, Tailwind, Capacitor 8, Supabase (Postgres, RLS, Auth, Deno edge functions), Anthropic API, HealthKit, RevenueCat</p>
+<p class="job-stack">Stack: React 19, JavaScript/TypeScript, Capacitor 8, Supabase/Postgres, RLS, Deno Edge Functions, Anthropic API, HealthKit</p>
 </div>
 
 <div class="job">
 <div class="job-header">
-<span class="job-title">Nexora — Multi-tenant HR SaaS for Swiss SMEs</span><br>
-<span class="job-company">Personal project</span> — <span class="job-dates">04/2026 – 07/2026</span> — <span class="job-location">Solo · In distribution discussions with C4J</span>
+<span class="job-title">SoloStall — E-commerce platform for independent creators</span><br>
+<span class="job-company">Customer product</span> — <span class="job-dates">2026 – Present</span> — <span class="job-location">Platform live · first customer implementation deployed</span>
 </div>
 <ul>
-<li>Full-stack HR platform: 53 React pages, 56 Express route modules, 73 tables with tenant isolation, role hierarchy and admin back office.</li>
-<li>Swiss-compliant payroll engine: AVS/AI/APG/AC/LAA with ceilings, BVG 2026 by age bracket, withholding tax scales for all 26 cantons, cantonal holidays and family allowances, covered by unit tests.</li>
-<li>Secure public API (SHA-256 hashed keys, constant-time comparison, scopes, HMAC-signed webhooks), TOTP 2FA, audit log, eight Swiss and international integrations (Stripe, Bexio, Skribble, Microsoft Entra).</li>
-<li>CI pipeline on GitHub Actions: Vitest unit tests, production build, Playwright end-to-end tests, weekly npm audit.</li>
+<li>Designed, built and deployed a tailored e-commerce platform for a first customer: storefront, catalog, inventory, Stripe payments, made-to-order requests, customer area and admin dashboard.</li>
+<li>Created an isolated shop environment per customer, including its own data and storage bindings; public platform and customer storefront are online.</li>
 </ul>
-<p class="job-stack">Stack: React 18, Vite, TanStack Query, Node.js, Express, SQLite/PostgreSQL, JWT, Zod, Sentry, Vitest, Playwright</p>
+<p class="job-stack">Stack: Next.js, React, TypeScript, Cloudflare Workers, D1, R2, Drizzle, Stripe, Better Auth, Resend</p>
+</div>
+
+<div class="job">
+<div class="job-header">
+<span class="job-title">Stock Scout Bot — Claude-assisted financial research</span><br>
+<span class="job-company">Personal tool</span> — <span class="job-dates">2026</span>
+</div>
+<ul>
+<li>Built a Python workflow combining Claude CLI and financial data to generate company research, thematic analyses and HTML reports, with scheduled daily refreshes.</li>
+</ul>
+<p class="job-stack">Stack: Python, Claude CLI, yfinance, pandas, macOS automation</p>
 </div>
 
 <div class="job">
 <div class="job-header">
 <span class="job-title">Terravia — Where-to-live recommendation engine</span><br>
-<span class="job-company">Personal project</span> — <span class="job-dates">07/2026 – 08/2026</span> — <span class="job-location">Solo</span>
+<span class="job-company">Personal project</span> — <span class="job-dates">07/2026 – 08/2026</span> — <span class="job-location">Built prototype · not deployed</span>
 </div>
 <ul>
-<li>Ranks 121 regions against a personal profile across 11 weighted pillars with winsorized normalization (5th/95th percentiles) and natural-language explanations; World Bank and Wikidata data with a quality-control bot (1,189 checks).</li>
+<li>Ranks 121 geographic regions across 11 weighted pillars with winsorized normalization and natural-language explanations; combines World Bank and Wikidata data with a quality-control bot that recorded 1,189 checks.</li>
 </ul>
-<p class="job-stack">Stack: Angular 22, TypeScript, d3-geo, PWA, Capacitor, Node.js, Express, Docker, Vitest</p>
+<p class="job-stack">Stack: Angular 22, TypeScript, d3-geo, PWA, Capacitor, Node.js, Express, REST APIs, Docker, Vitest</p>
+</div>
+
+<div class="job">
+<div class="job-header">
+<span class="job-title">Nexora — Multi-tenant HR SaaS for Swiss SMEs</span><br>
+<span class="job-company">Personal project</span> — <span class="job-dates">04/2026 – 07/2026</span> — <span class="job-location">Local prototype · not deployed</span>
+</div>
+<ul>
+<li>Built a full-stack HR prototype with 53 React pages, 56 Express route modules and 73 database tables, 64 tenant-scoped; role hierarchy and administration back office.</li>
+<li>Implemented Swiss payroll rules (AVS/AI/APG/AC/LAA, BVG by age bracket, withholding tax for all 26 cantons) plus a secured public API, TOTP 2FA, eight integrations and GitHub Actions CI with Vitest and Playwright.</li>
+</ul>
+<p class="job-stack">Stack: React 18, Node.js, Express, SQLite, REST APIs, JWT, Zod, Vitest, Playwright, GitHub Actions</p>
 </div>
 
 <h2>Experience</h2>

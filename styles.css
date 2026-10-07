@@ -938,6 +938,15 @@ body::after {
     line-height: 1.4;
 }
 
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.82rem;
+}
+.project-links a { color: var(--color-accent); text-decoration: underline; text-underline-offset: 3px; }
+.project-featured .project-links a { color: var(--color-gold); }
+
 .project-highlights strong {
     display: block;
     font-size: 0.7rem;
