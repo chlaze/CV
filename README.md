@@ -12,7 +12,7 @@ Personal portfolio site and CV. Built with vanilla HTML / CSS / JS — zero depe
 - `cv-ats.html` / `CV_ATS.pdf` — English ATS-friendly CV source and PDF
 - `cv-ats-fr.html` / `CV_ATS_FR.pdf` — French ATS-friendly CV source and PDF
 
-The homepage offers both PDF downloads. Project statuses are stated separately: Sanoria v1.0 is live and v1.6.1 is under Apple review; Terravia has been submitted to Apple for review; the SoloStall web platform is deployed for its first customer and its iOS companion app is nearing App Store launch.
+The homepage offers both PDF downloads. Project statuses are stated separately: Sanoria v1.6.1 is distributed on the App Store; Terravia and the SoloStall iOS companion app are under Apple review; the SoloStall web platform is deployed for its first customer.
 
 ## Deploy
 
